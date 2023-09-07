@@ -1,0 +1,6 @@
+framework module Pods_BDTenderTests {
+  umbrella header "Pods-BDTenderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

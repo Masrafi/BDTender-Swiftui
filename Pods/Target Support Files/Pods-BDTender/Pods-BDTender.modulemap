@@ -1,0 +1,6 @@
+framework module Pods_BDTender {
+  umbrella header "Pods-BDTender-umbrella.h"
+
+  export *
+  module * { export * }
+}
