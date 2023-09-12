@@ -6,10 +6,8 @@ target 'BDTender' do
   use_frameworks!
 
   # Pods for BDTender
-  pod 'SwiftyJSON'
   pod 'Alamofire'
-  pod 'SVProgressHUD'
-  pod 'Unbox'
+  pod 'SwiftyJSON'
 
   target 'BDTenderTests' do
     inherit! :search_paths

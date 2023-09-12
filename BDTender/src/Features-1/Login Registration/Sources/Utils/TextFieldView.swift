@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct TextFieldView:  View{
-    let image: UIImage
+    var image: UIImage
     @State var search: String = ""
-    let title: String = ""
-    let hedar: String = ""
+    var title: String = ""
+    var hedar: String = ""
     var body: some View{
         VStack(alignment: .leading){
             Spacer().frame(maxHeight: 30)
@@ -29,13 +29,14 @@ struct TextFieldView:  View{
                  .background(Color.black)
             }
         }
-        
+
     }
 }
 
 
 struct TextFieldView_Previews: PreviewProvider {
+    let image: UIImage
     static var previews: some View {
-        TextFieldView(image: <#UIImage#>)
+        TextFieldView(image: UIImage(imageLiteralResourceName: ""))
     }
 }
