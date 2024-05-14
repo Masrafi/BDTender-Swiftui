@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40627C902BF3625B007618FF /* TodayTendesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40627C8F2BF3625A007618FF /* TodayTendesDetails.swift */; };
+		40627C922BF36384007618FF /* TodayTenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40627C912BF36384007618FF /* TodayTenderModel.swift */; };
+		40627C952BF36A08007618FF /* CorrugrndamTenderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40627C942BF36A08007618FF /* CorrugrndamTenderDetails.swift */; };
+		40627C972BF36A19007618FF /* LiveTenderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40627C962BF36A19007618FF /* LiveTenderDetails.swift */; };
+		40627C992BF36A2C007618FF /* PrivateTenderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40627C982BF36A2C007618FF /* PrivateTenderDetails.swift */; };
+		40627C9B2BF36B0F007618FF /* LiveTenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40627C9A2BF36B0F007618FF /* LiveTenderModel.swift */; };
+		40627C9D2BF36B30007618FF /* PrivateTenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40627C9C2BF36B30007618FF /* PrivateTenderModel.swift */; };
+		40627C9F2BF36B41007618FF /* CorrugendumTenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40627C9E2BF36B41007618FF /* CorrugendumTenderModel.swift */; };
+		40627CA12BF36CA6007618FF /* MyTenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40627CA02BF36CA6007618FF /* MyTenderModel.swift */; };
+		40627CA32BF373C3007618FF /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40627CA22BF373C3007618FF /* APIConfig.swift */; };
 		4FDE9324A8A67802C833B06E /* Pods_BDTenderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2C0F55CF137E1DEF23F4C4 /* Pods_BDTenderTests.framework */; };
 		C73FE9A12803347A4D7ABA7F /* Pods_BDTender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CEF33231B74FFE42C333EA /* Pods_BDTender.framework */; };
 		CE229AF029CEEE5000F656E0 /* CategoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE229AEF29CEEE5000F656E0 /* CategoryDetails.swift */; };
@@ -77,6 +87,16 @@
 
 /* Begin PBXFileReference section */
 		252AD69861801D8FF1693CDE /* Pods_BDTender_BDTenderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDTender_BDTenderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40627C8F2BF3625A007618FF /* TodayTendesDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTendesDetails.swift; sourceTree = "<group>"; };
+		40627C912BF36384007618FF /* TodayTenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTenderModel.swift; sourceTree = "<group>"; };
+		40627C942BF36A08007618FF /* CorrugrndamTenderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrugrndamTenderDetails.swift; sourceTree = "<group>"; };
+		40627C962BF36A19007618FF /* LiveTenderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTenderDetails.swift; sourceTree = "<group>"; };
+		40627C982BF36A2C007618FF /* PrivateTenderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateTenderDetails.swift; sourceTree = "<group>"; };
+		40627C9A2BF36B0F007618FF /* LiveTenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTenderModel.swift; sourceTree = "<group>"; };
+		40627C9C2BF36B30007618FF /* PrivateTenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateTenderModel.swift; sourceTree = "<group>"; };
+		40627C9E2BF36B41007618FF /* CorrugendumTenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrugendumTenderModel.swift; sourceTree = "<group>"; };
+		40627CA02BF36CA6007618FF /* MyTenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTenderModel.swift; sourceTree = "<group>"; };
+		40627CA22BF373C3007618FF /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 		4F032B109FFE36FF66EAA089 /* Pods-BDTenderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDTenderTests.release.xcconfig"; path = "Target Support Files/Pods-BDTenderTests/Pods-BDTenderTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F2C0F55CF137E1DEF23F4C4 /* Pods_BDTenderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDTenderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		865B88375414DA6AD6FEC291 /* Pods-BDTender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDTender.debug.xcconfig"; path = "Target Support Files/Pods-BDTender/Pods-BDTender.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +184,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40627C862BF36186007618FF /* Feature_4 */ = {
+			isa = PBXGroup;
+			children = (
+				40627C872BF361A8007618FF /* Tender Status Details */,
+			);
+			name = Feature_4;
+			sourceTree = "<group>";
+		};
+		40627C872BF361A8007618FF /* Tender Status Details */ = {
+			isa = PBXGroup;
+			children = (
+				40627C882BF361CA007618FF /* Sources */,
+			);
+			path = "Tender Status Details";
+			sourceTree = "<group>";
+		};
+		40627C882BF361CA007618FF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				40627C8E2BF36215007618FF /* ViewController */,
+				40627C8B2BF361E4007618FF /* Utils */,
+				40627C8A2BF361DC007618FF /* Managers */,
+				40627C892BF361D4007618FF /* Model */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		40627C892BF361D4007618FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40627C912BF36384007618FF /* TodayTenderModel.swift */,
+				40627C9A2BF36B0F007618FF /* LiveTenderModel.swift */,
+				40627C9C2BF36B30007618FF /* PrivateTenderModel.swift */,
+				40627C9E2BF36B41007618FF /* CorrugendumTenderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40627C8A2BF361DC007618FF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		40627C8B2BF361E4007618FF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		40627C8E2BF36215007618FF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				40627C8F2BF3625A007618FF /* TodayTendesDetails.swift */,
+				40627C942BF36A08007618FF /* CorrugrndamTenderDetails.swift */,
+				40627C962BF36A19007618FF /* LiveTenderDetails.swift */,
+				40627C982BF36A2C007618FF /* PrivateTenderDetails.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		9BBFBCB86FB48B7B591F76D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5980C129D2C1DE00347CFA /* FavoriteTenderModel.swift */,
+				40627CA02BF36CA6007618FF /* MyTenderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +384,7 @@
 		CE78CA4429C4BE370000CB40 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				40627C862BF36186007618FF /* Feature_4 */,
 				CE5980EB29D2D1A300347CFA /* Features-1 */,
 				CE5980ED29D2D1BB00347CFA /* Features-3 */,
 				CE5980EC29D2D1B100347CFA /* Features-2 */,
@@ -313,6 +398,7 @@
 				CED381AB29C4A61000AE6E5C /* BDTenderApp.swift */,
 				CED381AD29C4A61000AE6E5C /* ContentView.swift */,
 				CE786D8629CE03330006113B /* HttpURLSession.swift */,
+				40627CA22BF373C3007618FF /* APIConfig.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -859,8 +945,11 @@
 				CE838FB129CC20EA004DDB7B /* TenderUI.swift in Sources */,
 				CE789A5C29C8481B00885E7B /* NavBarView.swift in Sources */,
 				CE5980D629D2C84A00347CFA /* CategoryDetailsModel.swift in Sources */,
+				40627C9D2BF36B30007618FF /* PrivateTenderModel.swift in Sources */,
 				CEABF03429CAC3C50061F6CB /* District.swift in Sources */,
+				40627C972BF36A19007618FF /* LiveTenderDetails.swift in Sources */,
 				CEA34D7C29C5FD9F0010EBE8 /* RegistrationScreen.swift in Sources */,
+				40627C922BF36384007618FF /* TodayTenderModel.swift in Sources */,
 				CE78CA4929C4BF870000CB40 /* InitialScreen.swift in Sources */,
 				CE727F4129C9B9A500B3028B /* AllTender.swift in Sources */,
 				CE727F4329C9B9E800B3028B /* TenderSettings.swift in Sources */,
@@ -872,16 +961,22 @@
 				CE727F4929C9EB2D00B3028B /* TenderDesign.swift in Sources */,
 				CE2B7B9629CCA771002ADD16 /* PrivateStatus.swift in Sources */,
 				CEDA329D29C89CC600558650 /* FavTender.swift in Sources */,
+				40627CA12BF36CA6007618FF /* MyTenderModel.swift in Sources */,
+				40627C9F2BF36B41007618FF /* CorrugendumTenderModel.swift in Sources */,
 				CE5980E829D2D0E400347CFA /* SearchView.swift in Sources */,
 				CE5980E429D2CFB000347CFA /* TextFieldView.swift in Sources */,
 				CE229AF029CEEE5000F656E0 /* CategoryDetails.swift in Sources */,
 				CE78CA4729C4BEB70000CB40 /* SplashScreen.swift in Sources */,
 				CE5980D829D2C89F00347CFA /* CategoryDetailsViewJSON.swift in Sources */,
 				CED381AE29C4A61000AE6E5C /* ContentView.swift in Sources */,
+				40627C992BF36A2C007618FF /* PrivateTenderDetails.swift in Sources */,
 				CED381AC29C4A61000AE6E5C /* BDTenderApp.swift in Sources */,
+				40627C9B2BF36B0F007618FF /* LiveTenderModel.swift in Sources */,
+				40627CA32BF373C3007618FF /* APIConfig.swift in Sources */,
 				CEF880F429CAFB9400C38D57 /* ApiView.swift in Sources */,
 				CE727F4529C9BA0700B3028B /* TenderLogs.swift in Sources */,
 				CE786D8729CE03330006113B /* HttpURLSession.swift in Sources */,
+				40627C952BF36A08007618FF /* CorrugrndamTenderDetails.swift in Sources */,
 				CE5980EA29D2D11D00347CFA /* PayView.swift in Sources */,
 				CEBA562029D298DF00531B6F /* CategoryView.swift in Sources */,
 				CE2B7B9A29CCA870002ADD16 /* TenderStatus.swift in Sources */,
@@ -889,6 +984,7 @@
 				CE5980C229D2C1DE00347CFA /* FavoriteTenderModel.swift in Sources */,
 				CE229AF229CEEE6200F656E0 /* OrganizationDetails.swift in Sources */,
 				CE2B7B9429CCA758002ADD16 /* CorrigendumStatus.swift in Sources */,
+				40627C902BF3625B007618FF /* TodayTendesDetails.swift in Sources */,
 				CE5980DC29D2C96300347CFA /* InitialView.swift in Sources */,
 				CE78CA4B29C566CE0000CB40 /* LoginScreen.swift in Sources */,
 			);
@@ -1050,6 +1146,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BDTender/Preview Content\"";
+				DEVELOPMENT_TEAM = R8JSHHDFGA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1079,6 +1176,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BDTender/Preview Content\"";
+				DEVELOPMENT_TEAM = R8JSHHDFGA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

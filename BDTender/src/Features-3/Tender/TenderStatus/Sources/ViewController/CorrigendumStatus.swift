@@ -11,7 +11,7 @@ struct CorrigendumStatus: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).onAppear{
             print("Corrigendum Tender Status")
-            var request = URLRequest(url: URL(string: ".../count-corrigendum-tender")!,timeoutInterval: Double.infinity)
+            var request = URLRequest(url: URL(string: "https://bdtender.com/api/count-corrigendum-tender")!,timeoutInterval: Double.infinity)
             request.httpMethod = "GET"
 
             let task = URLSession.shared.dataTask(with: request) { data, response, error in

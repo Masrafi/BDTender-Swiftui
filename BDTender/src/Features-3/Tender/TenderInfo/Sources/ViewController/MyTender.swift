@@ -8,26 +8,10 @@
 import SwiftUI
 import Alamofire
 import SwiftyJSON
-struct MyTenderResponse : Codable {
 
-    var workdesc : String? = "View Image"
-    var tendercode : String? = "View Image"
-    var TenderContentType : String? = "View Image"
-    var issudate : String? = "View Image"
-    var distname : String? = "View Image"
-    var tendersource : String? = "View Image"
-    var sectorcode : String? = "View Image"
-    var ernestamt : String? = "View Image"
-    var seduleprice : String? = "View Image"
-    var tpurchesdate : String? = "View Image"
-    var PrebidMeetingDate : String? = "View Image"
-    var tsubmissiondate : String? = "View Image"
-    var tboxopendate : String? = "View Image"
-    var visitors : String? = "View Image"
-
-}
 
 struct MyTender: View {
+    @AppStorage("savedEmail") var savedEmail: String = ""
     @State var items: [MyTenderResponse] = []
     @State private var isLoading = false
     var body: some View {
@@ -50,7 +34,7 @@ struct MyTender: View {
                 return decoder
             }()
             
-            AF.request(".../my-profile", method: .post, parameters: ["Email": "masrafianam@gmail.com"] ).validate(statusCode: 200..<300)
+            AF.request(APIConfig.todaysURL, method: .post, parameters: ["Email": savedEmail] ).validate(statusCode: 200..<300)
                 .responseString(completionHandler: {
                 str in
                 print("str: ", str)

@@ -15,8 +15,8 @@ struct HttpURLSession: View {
                 Text(item.workdesc ?? "View").foregroundColor(Color.black).font(.custom("PlayfairDisplay-Bold", size: 16))
             }
         }.onAppear{
-            viewModel.loadData()
-            viewModel.postData()
+//            viewModel.loadData()
+//            viewModel.postData()
         }
     }
 }

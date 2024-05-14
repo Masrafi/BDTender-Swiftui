@@ -1,28 +1,20 @@
 PODS:
   - Alamofire (5.6.4)
-  - SVProgressHUD (2.2.5)
   - SwiftyJSON (5.0.1)
-  - Unbox (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
-  - SVProgressHUD
   - SwiftyJSON
-  - Unbox
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - SVProgressHUD
     - SwiftyJSON
-    - Unbox
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
-  Unbox: d2677af8fde59a30141e02981b11cb6a0e3b6bc5
 
-PODFILE CHECKSUM: 01c1b08a64038e6cdbdbc02dad5c649c403cfb86
+PODFILE CHECKSUM: 94116f95f71ea1fe5305111279a8a31aec54c292
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.15.0

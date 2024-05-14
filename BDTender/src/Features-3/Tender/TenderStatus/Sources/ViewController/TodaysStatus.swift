@@ -10,36 +10,41 @@ import Alamofire
 
 
 struct TodaysStatus: View {
+    @State var today: [Today] = []
     var responseString: String = ""
-    //@State var items: [TodaysResponse] = []
     var body: some View {
+        
         HStack{
             VStack{
                 Image("nameOne").resizable().frame(width: 30, height: 40)
             }
-            VStack{
-                Text("Today's").foregroundColor(Color.black).font(.custom("PlayfairDisplay-Bold", size: 15)).fontWeight(.bold)
-                Text("325").foregroundColor(Color.black).font(.custom("PlayfairDisplay-Bold", size: 15)).fontWeight(.bold)
-            }
-        }.onAppear{
-            
-           
-            var request = URLRequest(url: URL(string: ".../count-corrigendum-tender")!,timeoutInterval: Double.infinity)
-            request.httpMethod = "GET"
-            
-            let task = URLSession.shared.dataTask(with: request) { data, response, error in
-                guard let data = data else {
-                    print("Corrigendum Tender")
-                    print(String(describing: error))
-                    return
+            NavigationLink(destination: TodayTendesDetails()) {
+                VStack{
+                    Text("Today's").foregroundColor(Color.black).font(.custom("PlayfairDisplay-Bold", size: 15)).fontWeight(.bold)
+                    Text(String(today.first?.message ?? 00)).foregroundColor(Color.black).font(.custom("PlayfairDisplay-Bold", size: 15)).fontWeight(.bold)
                 }
-                print("Corrigendum Tender Status")
-                print(String(data: data, encoding: .utf8)!)
-                
-               
-            }
+            }}.onAppear{
+            let decoder: JSONDecoder = {
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                return decoder
+            }()
             
-            task.resume()
+                AF.request(APIConfig.todayCountURL, method: .get ).validate(statusCode: 200..<300)
+                .responseString(completionHandler: {
+                    str in
+                    print("str: ", str)
+                })
+                .responseDecodable(of: [Today].self, decoder: decoder) {
+                    response in
+                    switch response.result {
+                    case.success(let items):
+                        print("itemd: ", items.first?.message ?? "Not found")
+                        self.today = items
+                    case.failure(let error):
+                        print("Error: ", error.localizedDescription)
+                    }
+                }
         }
     }
 }
@@ -50,3 +55,6 @@ struct TodaysStatus_Previews: PreviewProvider {
     }
 }
 
+struct Today : Codable {
+    var message : Int? = 12
+}

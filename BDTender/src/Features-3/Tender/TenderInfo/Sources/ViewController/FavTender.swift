@@ -11,6 +11,7 @@ import SwiftyJSON
 
 
 struct FavTender: View {
+    @AppStorage("savedEmail") var savedEmail: String = ""
     @State var items: [FavoriteTenderModel] = []
     @State private var isLoading = false
     var body: some View {
@@ -38,7 +39,7 @@ struct FavTender: View {
                 return decoder
             }()
             
-            AF.request(".../show-wish-list", method: .post, parameters: ["Email": "masrafianam@gmail.com"] ).validate(statusCode: 200..<300)
+            AF.request(APIConfig.favoriteURL, method: .post, parameters: ["Email": savedEmail] ).validate(statusCode: 200..<300)
                 .responseString(completionHandler: {
                 str in
                 print("str: ", str)

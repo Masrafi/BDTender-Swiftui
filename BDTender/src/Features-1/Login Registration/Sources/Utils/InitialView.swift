@@ -9,6 +9,7 @@ import SwiftUI
 
 struct InitialView: View {
     @State private var isPresented = false
+    @AppStorage("isInitial") var isInitial: Bool = false
     var body: some View {
         VStack {
             NavigationLink(destination: RegistrationScreen(), label: {
@@ -26,6 +27,7 @@ struct InitialView: View {
             NavigationLink(destination: LoginScreen(), label: {
                 Image("login").resizable().frame(width: 150, height: 50)
             })
+            
             //.navigationBarHidden(true).foregroundColor(.black)
             
 //                    Button(action: {

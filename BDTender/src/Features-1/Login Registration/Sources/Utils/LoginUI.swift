@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LoginUI: View {
-    @State var email: String = ""
-    @State var password: String = ""
+    @Binding var email: String
+    @Binding var password: String
     var body: some View {
         HStack{
             VStack (alignment:.leading, spacing: 0){
@@ -63,6 +63,6 @@ struct LoginUI: View {
 
 struct LoginUI_Previews: PreviewProvider {
     static var previews: some View {
-        LoginUI()
+        LoginUI(email: .constant(""), password: .constant(""))
     }
 }

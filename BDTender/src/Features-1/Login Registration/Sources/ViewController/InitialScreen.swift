@@ -9,13 +9,19 @@ import SwiftUI
 
 struct InitialScreen: View {
     @State private var isPresented = false
-    var body: some View {
-        NavigationView {
-            ZStack {
-                //Rectangle().background(Color.green)
-                Color.green.ignoresSafeArea()
-                InitialView()
+    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false // Add this line
 
+    var body: some View {
+        if isLoggedIn{
+            LoginScreen()
+        }else{
+            NavigationView {
+                ZStack {
+                    //Rectangle().background(Color.green)
+                    Color.green.ignoresSafeArea()
+                    InitialView()
+                    
+                }
             }
         }
     }
